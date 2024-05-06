@@ -1,7 +1,7 @@
 import math
 
 
-def num_len(num):
+def num_len(num) -> int:
     return round(math.log(num, 10)+1)
 
 if __name__ == '__main__':
