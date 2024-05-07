@@ -3,14 +3,14 @@ import numpy as np
 
 
 
-def average(number_list):
+def average(number_list) -> float:
     sum = 0
     for num in number_list:
         sum += num
     return sum / len(number_list)
 
 
-def positive_numbers(number_list):
+def positive_numbers(number_list) -> int:
     count_positive = 0
     for num in number_list:
         if num >= 0 :
@@ -18,7 +18,7 @@ def positive_numbers(number_list):
     return count_positive
 
 
-def sort_numbers(number_list):
+def sort_numbers(number_list) -> list:
     return sorted(number_list)
 
 
