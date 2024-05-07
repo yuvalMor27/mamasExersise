@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
 def average(number_list) -> float:
     sum = 0
     for num in number_list:

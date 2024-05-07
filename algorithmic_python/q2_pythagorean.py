@@ -8,4 +8,4 @@ def pythagorean_triplet_by_sum(sum) -> str:
     return "There is no Pythagorean triple"
 
 if __name__ == '__main__':
-    print(pythagorean_triplet_by_sum(10))
+    print(pythagorean_triplet_by_sum(1000))
