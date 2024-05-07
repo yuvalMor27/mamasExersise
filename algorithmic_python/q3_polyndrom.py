@@ -13,5 +13,5 @@ def is_sorted_polyndrom(word) -> bool:
 
 
 if __name__ == '__main__':
-    print(is_sorted_polyndrom("efgfeh"))
+    print(is_sorted_polyndrom("sos"))
 
