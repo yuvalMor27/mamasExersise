@@ -55,5 +55,13 @@ namespace Oop
             _lastNode = beforeLast;
             return _lastNode.Value;
         }
+
+        public int Unqueue()
+        {
+            Node current_node = _head;
+            int headVal = _head.Value;
+            _head = current_node.Next;
+            return headVal;
+        }
     }
 }
