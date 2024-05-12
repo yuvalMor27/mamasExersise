@@ -63,5 +63,19 @@ namespace Oop
             _head = current_node.Next;
             return headVal;
         }
+
+        public IEnumerable<int> ToList()
+        {
+            List<int> list = new List<int>();
+            Node current_node = _head;
+            Node head = _head;
+            while (head != null)
+            {
+                list.Add(head.Value);
+                head = head.Next;
+            }
+            IEnumerable<int> numberEnumerable = list;
+            return numberEnumerable;
+        }
     }
 }
