@@ -1,0 +1,13 @@
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.csprojAssemblyReference.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.AssemblyInfoInputs.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.AssemblyInfo.cs
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.csproj.CoreCompileInputs.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.exe
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.deps.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.runtimeconfig.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.runtimeconfig.dev.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\bin\Debug\netcoreapp3.1\Oop.pdb
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.pdb
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Oop\Oop\obj\Debug\netcoreapp3.1\Oop.genruntimeconfig.cache

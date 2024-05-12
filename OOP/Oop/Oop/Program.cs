@@ -6,7 +6,12 @@ namespace Oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LinkedList tryNode = new LinkedList(9);
+            tryNode.Append(5);
+            tryNode.Append(8);
+            tryNode.Prepend(1);
+            tryNode.Pop();
+
         }
     }
 }
