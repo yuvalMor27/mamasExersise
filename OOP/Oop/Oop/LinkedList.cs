@@ -77,5 +77,19 @@ namespace Oop
             IEnumerable<int> numberEnumerable = list;
             return numberEnumerable;
         }
+
+        public bool IsCircular()
+        {
+            bool isCircular = false;
+            if (_lastNode.Next == null)
+            {
+                isCircular = false;
+            }
+            if (_lastNode.Next == _head)
+            {
+                isCircular = true;
+            }
+            return isCircular;
+        }
     }
 }
