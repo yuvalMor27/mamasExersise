@@ -9,8 +9,9 @@ namespace Oop
             LinkedList tryNode = new LinkedList(9);
             tryNode.Append(5);
             tryNode.Append(8);
-            tryNode.Prepend(1);
-            tryNode.IsCircular();
+            tryNode.Append(1);
+            Node n = tryNode.GetMaxNode();
+            Node y = tryNode.GetMinNode();
 
         }
     }

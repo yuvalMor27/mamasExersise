@@ -20,7 +20,7 @@ namespace Oop
         {
             Node node = this._head;
             int i = 0;
-            while (i++ < index )
+            while (i++ < index)
             {
                 node = node.Next;
             }
@@ -45,12 +45,12 @@ namespace Oop
         {
             int index = 0;
             Node current_node = _head;
-            while (current_node!= null)
+            while (current_node != null)
             {
                 current_node = current_node.Next;
                 index += 1;
             }
-            Node beforeLast = _GetNodeAt(index-1);
+            Node beforeLast = _GetNodeAt(index - 1);
             beforeLast.Next = null;
             _lastNode = beforeLast;
             return _lastNode.Value;
@@ -90,6 +90,105 @@ namespace Oop
                 isCircular = true;
             }
             return isCircular;
+        }
+
+
+        public Node SortList()
+        {
+            if (_head == null || _head.Next == null)
+            {
+                return _head;
+            }
+
+            bool swapped;
+            do
+            {
+                swapped = false;
+                Node current = _head;
+                Node previous = null;
+
+                while (current.Next != null)
+                {
+                    if (current.Value > current.Next.Value)
+                    {
+                        Node temp = current.Next;
+                        current.Next = temp.Next;
+                        temp.Next = current;
+                        if (previous == null)
+                        {
+                            _head = temp;
+                        }
+                        else
+                        {
+                            previous.Next = temp;
+                        }
+                        previous = temp;
+                        swapped = true;
+                    }
+                    else
+                    {
+                        previous = current;
+                        current = current.Next;
+                    }
+                }
+            } while (swapped);
+
+            return _head;
+        }
+
+        
+        public Node SortListBigToSmall()
+        {
+            if (_head == null || _head.Next == null)
+            {
+                return _head;
+            }
+
+            bool swapped;
+            do
+            {
+                swapped = false;
+                Node current = _head;
+                Node previous = null;
+
+                while (current.Next != null)
+                {
+                    if (current.Value < current.Next.Value)
+                    {
+                        Node temp = current.Next;
+                        current.Next = temp.Next;
+                        temp.Next = current;
+                        if (previous == null)
+                        {
+                            _head = temp;
+                        }
+                        else
+                        {
+                            previous.Next = temp;
+                        }
+                        previous = temp;
+                        swapped = true;
+                    }
+                    else
+                    {
+                        previous = current;
+                        current = current.Next;
+                    }
+                }
+            } while (swapped);
+
+            return _head;
+        }
+        public Node GetMaxNode()
+        {
+            SortListBigToSmall();
+            return _head;
+        }
+
+        public Node GetMinNode()
+        {
+            SortList();
+            return _head;
         }
     }
 }
