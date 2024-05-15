@@ -1,0 +1,16 @@
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.exe
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.deps.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.runtimeconfig.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.runtimeconfig.dev.json
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\ref\numericalExpression.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\bin\Debug\net5.0\numericalExpression.pdb
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.AssemblyInfoInputs.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.AssemblyInfo.cs
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.csproj.CoreCompileInputs.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\ref\numericalExpression.dll
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.pdb
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.genruntimeconfig.cache
+C:\Users\cgc\Desktop\mamas\mamasExersise\OOP\Q7\numericalExpression\numericalExpression\obj\Debug\net5.0\numericalExpression.csprojAssemblyReference.cache
