@@ -8,57 +8,52 @@ namespace numericalExpression
 {
     class NumericalExpression
     {
-        public long Number { get; set; }
-        private long _number;
+        public static long Number { get; set; }
 
         public NumericalExpression(long number)
         {
             Number = number;
-            _number = Number;
         }
 
-
-
-
-        public string ToString(long _number)
+        public string ToString(long num)
         {
-            if (_number == 0)
+            if (num == 0)
             {
                 return "zero";
             }
 
-            if (_number < 0)
+            if (num < 0)
             {
-                _number = Math.Abs(_number);
+                num = Math.Abs(num);
                 return "minus " + ToString();
             }
 
             string words = "";
-            if ((_number / 1000000000) > 0)
+            if ((num / 1000000000) > 0)
             {
-                words += ToString(_number / 1000000000) + " billion  ";
-                _number %= 1000000000;
+                words += ToString(num / 1000000000) + " billion ";
+                num %= 1000000000;
             }
 
-            if ((_number / 1000000) > 0)
+            if ((num / 1000000) > 0)
             {
-                words += ToString(_number / 1000000) + " million ";
-                _number %= 1000000;
+                words += ToString(num / 1000000) + " million ";
+                num %= 1000000;
             }
 
-            if ((_number / 1000) > 0)
+            if ((num / 1000) > 0)
             {
-                words += ToString(_number / 1000) + " thousand ";
-                _number %= 1000;
+                words += ToString(num / 1000) + " thousand ";
+                num %= 1000;
             }
 
-            if ((_number / 100) > 0)
+            if ((num / 100) > 0)
             {
-                words += ToString(_number / 100) + " hundred ";
-                _number %= 100;
+                words += ToString(num / 100) + " hundred ";
+                num %= 100;
             }
 
-            if (_number > 0)
+            if (num > 0)
             {
                 if (words != "")
                 {
@@ -68,22 +63,64 @@ namespace numericalExpression
                 var unitsMap = new[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
                 var tensMap = new[] { "zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 
-                if (_number < 20)
-                    words += unitsMap[_number];
+                if (num < 20)
+                    words += unitsMap[num];
                 else
                 {
-                    words += tensMap[_number / 10];
-                    if ((_number % 10) > 0)
-                        words += "-" + unitsMap[_number % 10];
+                    words += tensMap[num / 10];
+                    if ((num % 10) > 0)
+                        words += "-" + unitsMap[num % 10];
                 }
             }
-
             return words;
         }
 
-        public long ReturnVal()
+        public long GetValue()
         {
-            return _number;
+            return Number;
+        }
+
+        public static int SumLetters(int numToSum)
+        { 
+            int lunNum = 0;
+            for (int num = 0; num <= numToSum; num++)
+            {
+                NumericalExpression x = new NumericalExpression(numToSum);
+                string word = x.ToString(num);
+                int space = 0;
+                for (int index = 0; index < word.Length; index++)
+                {
+                    if (word[index] == ' ')
+                    {
+                        space++;
+                    }
+                }
+                lunNum += word.Length - space;
+            }
+            return lunNum;
+        }
+
+
+        //Polymorphism
+        public static int SumLetters(NumericalExpression Number)
+        {
+            int lunNum = 0;
+            for (int num = 0; num <= Number.GetValue(); num++)
+            {
+                NumericalExpression x = new NumericalExpression(Number.GetValue());
+                string word = x.ToString(num);
+                int space = 0;
+                for (int index = 0; index < word.Length; index++)
+                {
+                    if (word[index] == ' ')
+                    {
+                        space++;
+                    }
+                }
+                lunNum += word.Length - space;
+            }
+            return lunNum;
         }
     }
 }
+
