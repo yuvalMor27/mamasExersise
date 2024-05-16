@@ -41,6 +41,19 @@ def graph(number_list, index_list):
     plt.show()
 
 
+def is_number(num):
+    if "-" in num:
+        num_abs = abs(float(num))
+        if str(num_abs).replace(".", "", 1).isdigit():
+            return True
+        else:
+            return False
+    else:
+        if num.replace(".", "", 1).isdigit():
+            return True
+        else:
+            return False
+
 if __name__ == '__main__':
     number_list = []
     index_list = []
@@ -48,10 +61,10 @@ if __name__ == '__main__':
     print("INPUT:")
     index = 1
     while num != -1:
-        try:
-            num = float(input("enter number"))
-        except:
-            raise TypeError("Only integers are allowed")
+        num = input("enter number")
+        if not is_number(num):
+            raise TypeError("Only numbers can be entered")
+        num = float(num)
         number_list.append(num)
         index_list.append(index)
         index += 1
